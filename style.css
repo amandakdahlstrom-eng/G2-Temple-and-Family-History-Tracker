@@ -19,7 +19,7 @@ body {
   position: absolute;
   bottom: 0;
   width: 100%;
-  background: lightcyan1;
+  background: darkcyan;
   height: 0%;
   transition: height 0.5s ease;
 }
