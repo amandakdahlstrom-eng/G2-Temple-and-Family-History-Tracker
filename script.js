@@ -1,19 +1,17 @@
-// Google Sheets API endpoint for cell B2 in Sheet1
-const sheetURL = "https://docs.google.com/spreadsheets/d/1pjBj8nzDLD8vARfs5IiaCtczvbOP0JX7gUXswVKs88k/gviz/tq?tqx=out:json&tq=SELECT B LIMIT 1&sheet=Sheet1";
+async function fetchProgress() {
+  const url = 'https://script.google.com/macros/s/AKfycbyYLJsi5-a3-W6YuKSbYYJxdK9qnAA-qtQO30MI9ESS4DoGYD4SaQn_1SyIgKNjQqFY/exec'; // Replace with your actual URL
+  try {
+    const res = await fetch(url);
+    const data = await res.json();
 
-// Goal value
-const goal = 5000;
+    // Create puzzles
+    createPuzzle('puzzle1', 'goal1.jpg', 5, 5);
+    createPuzzle('puzzle2', 'goal2.jpg', 5, 5);
 
-fetch(sheetURL)
-  .then(response => response.text())
-  .then(data => {
-    const jsonData = JSON.parse(data.substr(47).slice(0, -2));
-    const value = parseFloat(jsonData.table.rows[0].c[0].v);
-    const percent = Math.min((value / goal) * 100, 100);
-    document.getElementById('fill').style.height = percent + '%';
-    document.getElementById('goalText').innerText = value + ' / ' + goal;
-  })
-  .catch(error => {
-    console.error("Error fetching data:", error);
-    document.getElementById('goalText').innerText = "Error loading data";
-  });
+    // Reveal based on live data
+    revealPuzzle('puzzle1', data.goal1, 5000); // Adjust goal as needed
+    revealPuzzle('puzzle2', data.goal2, 50000);  // Adjust goal as needed
+  } catch (error) {
+    console.error("Failed to fetch progress data:", error);
+  }
+}
