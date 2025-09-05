@@ -2,29 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Puzzle Progress Tracker</title>
-  <style>
-    .puzzle-piece {
-      width: 50px;
-      height: 50px;
-      background-size: cover;
-      opacity: 0;
-      transition: opacity 0.5s ease;
-    }
-    .puzzle-container {
-      display: grid;
-      grid-template-columns: repeat(5, 50px);
-      grid-template-rows: repeat(5, 50px);
-      gap: 2px;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Progress Tracker</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Temple & Indexing Progress</h1>
-  <div id="puzzle1" class="puzzle-container"></div>
-  <div id="puzzle2" class="puzzle-container"></div>
+  <h1>Temple and Family History Progress</h1>
 
-  <!-- Confetti library (from CDN) -->
+  <div class="puzzle-wrapper">
+    <h2>Temple Progress</h2>
+    <div id="puzzle1" class="puzzle-container"></div>
+  </div>
+
+  <div class="puzzle-wrapper">
+    <h2>Indexing Progress</h2>
+    <div id="puzzle2" class="puzzle-container"></div>
+  </div>
+
+  <div id="loading">Loading progress...</div>
+
+  <!-- Confetti library -->
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
   <!-- Your script -->
   <script src="script.js"></script>
