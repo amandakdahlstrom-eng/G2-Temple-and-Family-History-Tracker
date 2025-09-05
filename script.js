@@ -15,3 +15,4 @@ async function fetchProgress() {
     console.error("Failed to fetch progress data:", error);
   }
 }
+window.onload = fetchProgress;
