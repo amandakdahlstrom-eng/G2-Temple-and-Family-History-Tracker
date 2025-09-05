@@ -5,8 +5,8 @@ async function fetchProgress() {
     const data = await res.json();
 
     // Create puzzles
-    createPuzzle('puzzle1', 'goal1.jpg', 5, 5);
-    createPuzzle('puzzle2', 'goal2.jpg', 5, 5);
+    createPuzzle('puzzle1', 'Idaho Falls temple.webp', 5, 5);
+    createPuzzle('puzzle2', 'Indexing.jpeg', 5, 5);
 
     // Reveal based on live data
     revealPuzzle('puzzle1', data.goal1, 5000); // Adjust goal as needed
