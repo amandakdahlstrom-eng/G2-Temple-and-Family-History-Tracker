@@ -18,7 +18,7 @@ function createPuzzle(containerId, imageUrl, rows, cols) {
       piece.style.backgroundImage = `url(${imageUrl})`;
       piece.style.backgroundSize = `${cols * 100}% ${rows * 100}%`;
       piece.style.backgroundPosition = `${(c / (cols - 1)) * 100}% ${(r / (rows - 1)) * 100}%`;
-      piece.style.opacity = 0;
+      piece.style.opacity = 1;
       container.appendChild(piece);
     }
   }
@@ -78,7 +78,7 @@ async function fetchProgress() {
 }
 
 window.onload = function () {
-  createPuzzle('puzzle1', 'https://via.placeholder.com/500', 5, 5);
+  createPuzzle('puzzle1', 'temple.webp', 5, 5);
   createPuzzle('puzzle2', 'indexing.jpeg', 5, 5);
   fetchProgress();
 };
