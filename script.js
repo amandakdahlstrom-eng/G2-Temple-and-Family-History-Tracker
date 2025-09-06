@@ -37,8 +37,11 @@ function createPuzzle(containerId, imageUrl, rows, cols) {
       const piece = document.createElement('div');
       piece.className = 'puzzle-piece';
       piece.style.backgroundImage = `url(${imageUrl})`;
-      piece.style.backgroundSize = `${cols * 100}% ${rows * 100}%`;
-      piece.style.backgroundPosition = `${(c / (cols - 1)) * 100}% ${(r / (rows - 1)) * 100}%`;
+      // piece.style.backgroundSize = `${cols * 100}% ${rows * 100}%`;
+      // piece.style.backgroundPosition = `${(c / (cols - 1)) * 100}% ${(r / (rows - 1)) * 100}%`;
+      piece.style.backgroundSize = 'cover';
+      piece.style.backgroundPosition = 'center';
+
       piece.style.opacity = 0;
       container.appendChild(piece);
     }
