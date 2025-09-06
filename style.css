@@ -21,6 +21,9 @@ h1 {
   background-color: #ddd;
   border: 2px solid #ccc;
 }
+.puzzle-container div {
+  border: 1px solid red;
+}
 
 .puzzle-container div {
   position: absolute;
