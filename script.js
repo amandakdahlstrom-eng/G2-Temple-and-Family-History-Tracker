@@ -57,6 +57,10 @@ async function fetchProgress() {
 
     revealPuzzle('puzzle1', data.goal1, 5000);
     revealPuzzle('puzzle2', data.goal2, 50000);
+
+    document.getElementById('progress1').textContent = `Progress: ${data.goal1} / 5000`;
+    document.getElementById('progress2').textContent = `Progress: ${data.goal2} / 50000`;
+
   } catch (error) {
     console.error("Failed to fetch progress data:", error);
   }
