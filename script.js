@@ -1,5 +1,12 @@
 let confettiFired = {}; // Tracks which puzzles have already celebrated
 
+window.onload = function () {
+  createPuzzle('puzzle1', 'Temple.webp', 5, 5);
+  createPuzzle('puzzle2', 'Indexing.jpeg', 5, 5);
+  fetchProgress();
+  
+};
+
 function createPuzzle(containerId, imageUrl, rows, cols) {
   const container = document.getElementById(containerId);
   container.innerHTML = '';
@@ -73,11 +80,6 @@ async function fetchProgress() {
   } catch (error) {
     console.error("Failed to fetch progress data:", error);
   }
-}
-
-window.onload = function () {
-  createPuzzle('puzzle1', 'Temple.webp', 5, 5);
-  createPuzzle('puzzle2', 'Indexing.jpeg', 5, 5);
-  fetchProgress();
-  
 };
+
+
