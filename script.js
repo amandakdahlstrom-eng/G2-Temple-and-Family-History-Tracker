@@ -18,7 +18,7 @@ function createPuzzle(containerId, imageUrl, rows, cols) {
       piece.style.backgroundImage = `url(${imageUrl})`;
       piece.style.backgroundSize = `${cols * 100}% ${rows * 100}%`;
       piece.style.backgroundPosition = `${(c / (cols - 1)) * 100}% ${(r / (rows - 1)) * 100}%`;
-      piece.style.opacity = 1;
+      piece.style.opacity = 0;
       container.appendChild(piece);
     }
   }
