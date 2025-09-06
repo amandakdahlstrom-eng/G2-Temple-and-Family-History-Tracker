@@ -27,8 +27,8 @@ h2 {
 /* Puzzle grid container */
 .puzzle-container {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(25, 1fr);
+  grid-template-rows: repeat(25, 1fr);
   width: 90vw;
   height: 90vw;
   max-width: 500px;
