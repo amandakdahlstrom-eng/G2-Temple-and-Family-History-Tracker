@@ -3,7 +3,7 @@ let confettiFired = {}; // Tracks which puzzles have already celebrated
 // Run when the whole page is loaded (DOM, images, styles)
 window.onload = function () {
   createPuzzle('puzzle1', 'Temple.webp', 25, 25);
-  createPuzzle('puzzle2', 'Indexing.jpeg', 50, 50);
+  createPuzzle('puzzle2', 'Indexing.jpeg', 25, 25);
   fetchProgress();
 };
 
