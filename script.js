@@ -67,7 +67,7 @@ async function fetchProgress() {
 }
 
 window.onload = function () {
-  createPuzzle('puzzle1', 'Idaho Falls temple.webp', 5, 5);
+  createPuzzle('puzzle1', 'Idaho-Falls-temple.webp', 5, 5);
   createPuzzle('puzzle2', 'Indexing.jpeg', 5, 5);
   fetchProgress();
 };
