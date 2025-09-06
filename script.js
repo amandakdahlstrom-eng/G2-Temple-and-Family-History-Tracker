@@ -75,10 +75,11 @@ async function fetchProgress() {
   } catch (error) {
     console.error("Failed to fetch progress data:", error);
   }
+  fetchProgress();
 }
 
 window.onload = function () {
-  createPuzzle('puzzle1','temple.webp', 5, 5);
-  createPuzzle('puzzle2','indexing.jpeg', 5, 5);
-  fetchProgress();
+  createPuzzle('puzzle1', 'temple.webp', 5, 5);
+  createPuzzle('puzzle2', 'indexing.jpeg', 5, 5);
+  
 };
