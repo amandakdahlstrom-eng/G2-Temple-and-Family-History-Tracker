@@ -50,7 +50,7 @@ function createPuzzle(containerId, imageUrl, rows, cols) {
 }
 
 async function fetchProgress() {
-  const url = 'https://script.google.com/macros/s/AKfycbyYLJsi5-a3-W6YuKSbYYJxdK9qnAA-qtQO30MI9ESS4DoGYD4SaQn_1SyIgKNjQqFY/exec';
+  const url = 'https://script.google.com/macros/s/AKfycbxn0HT3qx7hne-H0MAhYRmDr9DGJjic1mdvJBrXA7f8ZDCz6zE8SXF5uXswHQ8Hm80j/exec';
   try {
     const res = await fetch(url);
     const data = await res.json();
