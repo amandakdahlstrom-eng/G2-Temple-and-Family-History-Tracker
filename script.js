@@ -32,7 +32,7 @@ fetch(csvUrl)
     const progress2 = Math.min(value2 / goal2, 1.0);
     const tiles1 = Math.floor(progress1 * totalTiles);
     const tiles2 = Math.floor(progress2 * totalTiles);
-    createPuzzle("puzzle1", "images/image1_resized.jpg", tiles1);
-    createPuzzle("puzzle2", "images/image2_resized.jpg", tiles2);
+    createPuzzle("puzzle1", "image1_resized.jpg", tiles1);
+    createPuzzle("puzzle2", "image2_resized.jpg", tiles2);
   })
   .catch(error => console.error("Error fetching CSV:", error));
