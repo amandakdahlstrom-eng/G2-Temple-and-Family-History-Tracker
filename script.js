@@ -55,8 +55,8 @@ async function fetchProgress() {
     const res = await fetch(url);
     const data = await res.json();
 
-    revealPuzzle('puzzle1', data.goal1, 5000);
-    revealPuzzle('puzzle2', data.goal2, 50000);
+    revealPuzzle('puzzle1', data.goal1, 500);
+    revealPuzzle('puzzle2', data.goal2, 500);
   } catch (error) {
     console.error("Failed to fetch progress data:", error);
   }
