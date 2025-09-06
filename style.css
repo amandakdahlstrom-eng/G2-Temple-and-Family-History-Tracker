@@ -1,38 +1,36 @@
-/* Container for both puzzles */
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 40px;
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f9f9f9;
   padding: 20px;
 }
 
-/* Each puzzle section with heading and progress */
-.puzzle-section {
-  text-align: center;
+h1 {
+  margin-bottom: 40px;
 }
 
-/* Puzzle grid container */
-.puzzle {
+.progress-section {
+  margin-bottom: 50px;
+}
+
+.puzzle-container {
   position: relative;
   width: 500px;
   height: 500px;
-  margin: 0 auto;
-  border: 1px solid #ccc;
-  background-color: #f9f9f9;
+  margin: 0 auto 10px;
+  background-color: #ddd;
+  border: 2px solid #ccc;
 }
 
-/* Individual puzzle tiles */
-.puzzle div {
+.puzzle-container div {
   position: absolute;
   width: 20px;
   height: 20px;
   background-size: 500px 500px;
 }
 
-/* Progress text under each puzzle */
-.progress-text {
-  font-size: 1.2em;
-  margin-top: 10px;
-  color: #333;
+.progress-text,
+.percentage-text {
+  font-size: 18px;
+  margin: 5px 0;
 }
