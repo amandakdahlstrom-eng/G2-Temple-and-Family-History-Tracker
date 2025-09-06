@@ -82,6 +82,10 @@ h2 {
   .progress-text {
     font-size: 1em;
   }
+.puzzle-piece {
+  opacity: 1 !important;
+  border: 1px solid red; /* visualize pieces */
+}
 
   .puzzle-container {
     width: 95vw;
