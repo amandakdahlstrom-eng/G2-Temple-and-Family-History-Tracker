@@ -3,7 +3,7 @@ let confettiFired = {}; // Tracks which puzzles have already celebrated
 window.onload = function () {
   createPuzzle('puzzle1', 'Temple.webp', 5, 5);
   createPuzzle('puzzle2', 'Indexing.jpeg', 5, 5);
-  fetchProgress();
+  fetchProgress()
   
 };
 
@@ -16,6 +16,10 @@ function createPuzzle(containerId, imageUrl, rows, cols) {
   container.style.gridTemplateRows = `repeat(${rows}, 1fr)`;
   container.style.gap = '2px';
 
+  window.onload = function () {
+  createPuzzle('puzzle1', 'Temple.webp', 5, 5);
+  createPuzzle('puzzle2', 'Indexing.jpeg', 5, 5);
+  fetchProgress()
   for (let r = 0; r < rows; r++) {
     for (let c = 0; c < cols; c++) {
       const piece = document.createElement('div');
