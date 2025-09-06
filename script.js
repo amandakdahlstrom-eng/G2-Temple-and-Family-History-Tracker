@@ -2,7 +2,7 @@ let confettiFired = {}; // Tracks which puzzles have already celebrated
 
 // Run when the whole page is loaded (DOM, images, styles)
 window.onload = function () {
-  createPuzzle('puzzle1', 'Temple.webp', 25, 25);
+  createPuzzle('puzzle1', 'https://github.com/amandakdahlstrom-eng/G2-Temple-and-Family-History-Tracker/blob/2927d8f822c55af7b271c8c066c71422e40ed96a/Temple.webp', 25, 25);
   createPuzzle('puzzle2', 'https://github.com/amandakdahlstrom-eng/G2-Temple-and-Family-History-Tracker/blob/d943f5acbaf5660617d2ea545566e841af0c18b7/indexing.jpeg', 50, 50);
   fetchProgress();
 };
