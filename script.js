@@ -7,8 +7,6 @@ function createPuzzle(containerId, imageUrl, rows, cols) {
   container.style.display = 'grid';
   container.style.gridTemplateColumns = `repeat(${cols}, 1fr)`;
   container.style.gridTemplateRows = `repeat(${rows}, 1fr)`;
-  container.style.width = '500px';
-  container.style.height = '500px';
   container.style.gap = '2px';
 
   for (let r = 0; r < rows; r++) {
