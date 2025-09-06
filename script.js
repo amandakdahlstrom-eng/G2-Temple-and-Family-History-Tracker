@@ -40,5 +40,11 @@ fetch(csvUrl)
     // Display numerical progress
     document.getElementById("progress1").textContent = `${value1.toLocaleString()} / ${goal1.toLocaleString()}`;
     document.getElementById("progress2").textContent = `${value2.toLocaleString()} / ${goal2.toLocaleString()}`;
+
+    // ✅ Display percentage progress
+    const percent1 = (progress1 * 100).toFixed(1);
+    const percent2 = (progress2 * 100).toFixed(1);
+    document.getElementById("percentage1").textContent = `${percent1}% complete`;
+    document.getElementById("percentage2").textContent = `${percent2}% complete`;
   })
   .catch(error => console.error("Error fetching CSV:", error));
