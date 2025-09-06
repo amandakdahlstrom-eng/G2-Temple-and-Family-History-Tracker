@@ -4,7 +4,9 @@ let confettiFired = {}; // Tracks which puzzles have already celebrated
 window.onload = function () {
   createPuzzle('puzzle1', 'Temple.webp', 25, 25);
   createPuzzle('puzzle2', 'Indexing.jpeg', 25, 25);
-  fetchProgress();
+
+  revealAllPieces('puzzle1');
+  revealAllPieces('puzzle2');
 };
 
 /**
