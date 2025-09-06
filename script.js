@@ -1,8 +1,8 @@
 let confettiFired = {}; // Tracks which puzzles have already celebrated
 
 window.onload = function () {
-  createPuzzle('puzzle1', 'Temple.webp', 5, 5);
-  createPuzzle('puzzle2', 'Indexing.jpeg', 5, 5);
+  createPuzzle('puzzle1', 'Temple.webp', 25, 25);
+  createPuzzle('puzzle2', 'Indexing.jpeg', 50, 50);
   fetchProgress()
   
 };
